@@ -1,105 +1,93 @@
 /* style.css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
     background: #ccc;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
-}
-
-header {
-    background: #FCE1E7;
+  }
+  
+  header {
+    background: #000;
     height: 100px;
     position: relative;
-}
-
-header .logo {
-    height: 40px;
+  }
+  
+  header .logo{
+    width: 130px;
     position: absolute;
     left: 30px;
-    top: 30px;
-}
-
-/* 1단계 */
-#gnb > ul > li a {
-    color: #000;
+    top: 25px;
+  }
+  
+  /* 1단계 */
+  #gnb > ul > li a {
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
-}
-
-/* 2단계 */
-#gnb .depth2 > li > a {
+  }
+  
+  /* 2단계 */
+  #gnb .depth2 > li > a {
     font-size: 13px;
-}
-
-#gnb {
+  }
+  
+  #gnb {
     position: absolute;
     right: 30px;
     top: 40px;
-}
-
-#gnb > ul > li {
+  }
+  
+  #gnb > ul > li {
     float: left;
     margin-left: 10px;
     min-width: 100px;
     text-align: center;
-    /* outline: 1px solid red; */
-}
-
-#gnb > ul > li:last-child {
+  }
+  
+  #gnb > ul > li:last-child {
     width: auto;
     margin-left: 30px;
-}
-
-/* 이벤트 버튼 */
-#gnb .event-link {
-    background: #fff;
+  }
+  
+  /* 버튼 */
+  #gnb .event-link {
+    background: #1860c9;
     display: block;
-    padding: 4px 20px 5px 20px;
-    border-radius: 10px 10px 10px 10px ;
-}
-
-#gnb .event-link span {
-    margin-left: 1em;
-}
-
-/* 2단계 메뉴 액션 */
-#gnb .depth2 {
+    padding: 5px 50px 5px 30px;
+  }
+  
+  /* 2단계 메뉴 액션 */
+  #gnb .depth2 {
     display: none;
     margin-top: 1em;
-}
-
-#gnb .depth2.on {
+  }
+  
+  #gnb .depth2.on {
     display: block;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-#gnb .depth2 > li:hover > a {
-    color: #d36b82;
-}
-
-#gnb .depth2 > li {
+  }
+  
+  #gnb .depth2 > li {
     margin-bottom: 5px;
-}
-
-/* 섹션 */
-.section-bg {
+  }
+  
+  /* 섹션 */
+  .section-bg {
     width: 100%;
-    min-height: 1000px;
+    height: 800px;
     background: #666;
     background-size: cover;
     background-position: center;
@@ -107,95 +95,122 @@ header .logo {
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
-}
-
-.section-bg .title-group{
-    /* outline: 3px solid red; */
+  }
+  
+  .section-bg .title-group {
+    /* outline: 2px solid red; */
     text-align: center;
     color: #fff;
+  }
+  
+  .section-bg .title-group .img {
+    width: 450px;
+  }
+  
+  .section-bg .title-group .img1 {
+    width: 500px;
+  }
+
+  .section-bg .title-group .img2 {
+    width: 550px;
+  }
+
+  .section-bg .title-group .logo1 {
+    width: 600px;
+  }
+  
+  .section-bg .title-group h2 {
+    margin-top: 1em;
+  }
+
+  .section-bg .title-group .icon {
+      padding-top: 50px;
+      width: 35px;
 }
 
-.section-bg .title-group h2 {
-    margin-bottom: 1.5em;
-}
+  .section-bg .title-group .icon1 {
+      width: 90px;
+  }
 
-.section-bg .title-group .section-nav a {
+  .instagram {
+      position: absolute;
+      padding-top: 250px;
+      right: 0;
+      padding-right: 450px;
+  }
+  
+  .section-bg .title-group .info-artist a{
     color: #fff;
     font-size: 16px;
-}
-
-#aespa .title-group .section-nav a {
-    color: #000;
-}
-
-#aespa .title-group .section-nav span {
-    color: #000;
-}
-
-.section-bg .title-group .section-nav > li {
+  }
+  
+  .section-bg .title-group .info-artist > li {
     display: inline-block;
-}
+    margin-right: 2.5em;
+  }
+  
 
-.section-bg .title-group .section-nav > li > span {
-    margin-left: 1em;
-    margin-right: 1em;
-    opacity: 0.75;
-    font-size: 12px;
-    display: inline-block;
-}
+  #AMBITION {
+      background-image: url(./images/bg_logo.jpeg);
+  }
 
-#exo {
-    background-image: url(./images/bgb-exo.jpg);
-}
+  #changmo {
+    background-image: url(./images/bg_c.jpg);
+  }
 
-#redvelvet {
-    background-image: url(./images/bgb-rv.jpg);
-}
+  #leellamarz {
+    background-image: url(./images/bg_l.jpg);
+  }
 
-#nct {
-    background-image: url(./images/bgb-nct.jpg);
-}
+  #ashisland {
+    background-image: url(./images/bg_a.jpg);
+  }
+  
+  #hashswan {
+    background-image: url(./images/bg_h.jpg);
+  }
 
-#aespa {
-    background-image: url(./images/bgb-ae.jpg);
-}
-
-footer {
+  .info-artist li.instagram > p { 
+      font-size: 13px; 
+      color: #000;
+    }
+  
+  footer {
     position: relative;
-    background: #353535;
+    background: #363636;
     color: #9b9b9b;
     font-size: 12px;
     overflow: hidden;
-    padding-top: 8px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     height: 58px;
-}
-
-footer .copy {
+  }
+  
+  footer .copy {
     font-size: 10px;
     float: left;
     margin-top: 15px;
     margin-left: 30px;
-}
-
-.footer-nav a {
+  }
+  
+  .footer-nav a{
     color: #9b9b9b;
-}
-
-footer .footer-logo {
+  }
+  
+  footer .footer-logo {
     float: left;
     margin-left: 30px;
     margin-top: 13px;
-}
-
-footer .footer-nav {
+  }
+  
+  footer .footer-nav {
     float: right;
-    margin-top: 13px;
-    margin-right: 30px;
     /* outline: 1px solid red; */
-}
-
-footer .footer-nav > li {
+    margin-right: 30px;
+    margin-top: 13px;
+  }
+  
+  footer .footer-nav > li {
     display: inline-block;
     margin-left: 2em;
-}
-
+  }
