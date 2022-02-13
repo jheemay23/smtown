@@ -1,93 +1,105 @@
 /* style.css */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
     background: #ccc;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
-  }
-  
-  header {
-    background: #000;
+}
+
+header {
+    background: #FCE1E7;
     height: 100px;
     position: relative;
-  }
-  
-  header .logo{
-    width: 130px;
+}
+
+header .logo {
+    height: 40px;
     position: absolute;
     left: 30px;
-    top: 25px;
-  }
-  
-  /* 1단계 */
-  #gnb > ul > li a {
-    color: #fff;
+    top: 30px;
+}
+
+/* 1단계 */
+#gnb > ul > li a {
+    color: #000;
     font-size: 14px;
     font-weight: 500;
-  }
-  
-  /* 2단계 */
-  #gnb .depth2 > li > a {
+}
+
+/* 2단계 */
+#gnb .depth2 > li > a {
     font-size: 13px;
-  }
-  
-  #gnb {
+}
+
+#gnb {
     position: absolute;
     right: 30px;
     top: 40px;
-  }
-  
-  #gnb > ul > li {
+}
+
+#gnb > ul > li {
     float: left;
     margin-left: 10px;
     min-width: 100px;
     text-align: center;
-  }
-  
-  #gnb > ul > li:last-child {
+    /* outline: 1px solid red; */
+}
+
+#gnb > ul > li:last-child {
     width: auto;
     margin-left: 30px;
-  }
-  
-  /* 버튼 */
-  #gnb .event-link {
-    background: #1860c9;
+}
+
+/* 이벤트 버튼 */
+#gnb .event-link {
+    background: #fff;
     display: block;
-    padding: 5px 50px 5px 30px;
-  }
-  
-  /* 2단계 메뉴 액션 */
-  #gnb .depth2 {
+    padding: 4px 20px 5px 20px;
+    border-radius: 10px 10px 10px 10px ;
+}
+
+#gnb .event-link span {
+    margin-left: 1em;
+}
+
+/* 2단계 메뉴 액션 */
+#gnb .depth2 {
     display: none;
     margin-top: 1em;
-  }
-  
-  #gnb .depth2.on {
+}
+
+#gnb .depth2.on {
     display: block;
-  }
-  
-  #gnb .depth2 > li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#gnb .depth2 > li:hover > a {
+    color: #d36b82;
+}
+
+#gnb .depth2 > li {
     margin-bottom: 5px;
-  }
-  
-  /* 섹션 */
-  .section-bg {
+}
+
+/* 섹션 */
+.section-bg {
     width: 100%;
-    height: 800px;
+    min-height: 1000px;
     background: #666;
     background-size: cover;
     background-position: center;
@@ -95,122 +107,95 @@
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
-  }
-  
-  .section-bg .title-group {
-    /* outline: 2px solid red; */
-    text-align: center;
-    color: #fff;
-  }
-  
-  .section-bg .title-group .img {
-    width: 450px;
-  }
-  
-  .section-bg .title-group .img1 {
-    width: 500px;
-  }
-
-  .section-bg .title-group .img2 {
-    width: 550px;
-  }
-
-  .section-bg .title-group .logo1 {
-    width: 600px;
-  }
-  
-  .section-bg .title-group h2 {
-    margin-top: 1em;
-  }
-
-  .section-bg .title-group .icon {
-      padding-top: 50px;
-      width: 35px;
 }
 
-  .section-bg .title-group .icon1 {
-      width: 90px;
-  }
+.section-bg .title-group{
+    /* outline: 3px solid red; */
+    text-align: center;
+    color: #fff;
+}
 
-  .instagram {
-      position: absolute;
-      padding-top: 250px;
-      right: 0;
-      padding-right: 450px;
-  }
-  
-  .section-bg .title-group .info-artist a{
+.section-bg .title-group h2 {
+    margin-bottom: 1.5em;
+}
+
+.section-bg .title-group .section-nav a {
     color: #fff;
     font-size: 16px;
-  }
-  
-  .section-bg .title-group .info-artist > li {
+}
+
+#aespa .title-group .section-nav a {
+    color: #000;
+}
+
+#aespa .title-group .section-nav span {
+    color: #000;
+}
+
+.section-bg .title-group .section-nav > li {
     display: inline-block;
-    margin-right: 2.5em;
-  }
-  
+}
 
-  #AMBITION {
-      background-image: url(./images/bg_logo.jpeg);
-  }
+.section-bg .title-group .section-nav > li > span {
+    margin-left: 1em;
+    margin-right: 1em;
+    opacity: 0.75;
+    font-size: 12px;
+    display: inline-block;
+}
 
-  #changmo {
-    background-image: url(./images/bg_c.jpg);
-  }
+#exo {
+    background-image: url(./images/bgb-exo.jpg);
+}
 
-  #leellamarz {
-    background-image: url(./images/bg_l.jpg);
-  }
+#redvelvet {
+    background-image: url(./images/bgb-rv.jpg);
+}
 
-  #ashisland {
-    background-image: url(./images/bg_a.jpg);
-  }
-  
-  #hashswan {
-    background-image: url(./images/bg_h.jpg);
-  }
+#nct {
+    background-image: url(./images/bgb-nct.jpg);
+}
 
-  .info-artist li.instagram > p { 
-      font-size: 13px; 
-      color: #000;
-    }
-  
-  footer {
+#aespa {
+    background-image: url(./images/bgb-ae.jpg);
+}
+
+footer {
     position: relative;
-    background: #363636;
+    background: #353535;
     color: #9b9b9b;
     font-size: 12px;
     overflow: hidden;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 8px;
     height: 58px;
-  }
-  
-  footer .copy {
+}
+
+footer .copy {
     font-size: 10px;
     float: left;
     margin-top: 15px;
     margin-left: 30px;
-  }
-  
-  .footer-nav a{
+}
+
+.footer-nav a {
     color: #9b9b9b;
-  }
-  
-  footer .footer-logo {
+}
+
+footer .footer-logo {
     float: left;
     margin-left: 30px;
     margin-top: 13px;
-  }
-  
-  footer .footer-nav {
+}
+
+footer .footer-nav {
     float: right;
-    /* outline: 1px solid red; */
-    margin-right: 30px;
     margin-top: 13px;
-  }
-  
-  footer .footer-nav > li {
+    margin-right: 30px;
+    /* outline: 1px solid red; */
+}
+
+footer .footer-nav > li {
     display: inline-block;
     margin-left: 2em;
-  }
+}
+
