@@ -83,8 +83,9 @@ header .logo {
 
 #gnb .depth2.on {
     display: block;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     padding: 10px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 #gnb .depth2 > li:hover > a {
